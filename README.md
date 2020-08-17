@@ -71,31 +71,8 @@
 3. https://try.jsoup.org/
 ------
 
-## Android Tutorial Website
-1. Rebecca Franks (https://riggaroo.dev/)
-----
-
-## Test Automation For Android(Java and Kotlin)
-Android Test Automation
-
-I.Android Developer Testing
-https://developer.android.com/training/testing
-
-II. Code Lab 4 Repo 
-1.Advanced Android in Kotlin 05.1: Testing Basics
-https://codelabs.developers.google.com/codelabs/advanced-android-kotlin-training-testing-basics/index.html?index=..%2F..index#0
-
-2.Advanced Android in Kotlin 05.2: Introduction to Test Doubles and Dependency Injection
-https://codelabs.developers.google.com/codelabs/advanced-android-kotlin-training-testing-test-doubles/index.html?index=..%2F..index#0
-
-3.Advanced Android in Kotlin 05.3: Survey of Testing Topics
-https://codelabs.developers.google.com/codelabs/advanced-android-kotlin-training-testing-survey/index.html?index=..%2F..index#0
-
-4.Automated Accessibility Testing using Espresso
-https://codelabs.developers.google.com/codelabs/a11y-testing-espresso/index.html?index=..%2F..index#0
-
-III. Github Repo
-https://github.com/android/testing-samples
+## Android Best Practice 
+1. Coil (https://coil-kt.github.io/coil/getting_started/)
 
 ----
 
