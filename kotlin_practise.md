@@ -15,8 +15,58 @@ when (x) {
 ```
 
 ```javascript
+//If many cases should be handled in the same way, the branch conditions may be combined with a comma:
 when (x) {
     0, 1 -> print("x == 0 or x == 1")
     else -> print("otherwise")
 }
 ```
+
+```javascript
+//We can use arbitrary expressions (not only constants) as branch conditions
+when (x) {
+    parseInt(s) -> print("s encodes x")
+    else -> print("s does not encode x")
+}
+```
+
+```javascript
+//We can also check a value for being in or !in a range or a collection:
+when (x) {
+    in 1..10 -> print("x is in the range")
+    in validNumbers -> print("x is valid")
+    !in 10..20 -> print("x is outside the range")
+    else -> print("none of the above")
+}
+```
+
+
+```javascript
+//Another possibility is to check that a value is or !is of a particular type. Note that, due to smart casts, you can access the methods and properties of the type without any extra checks.
+fun hasPrefix(x: Any) = when(x) {
+    is String -> x.startsWith("prefix")
+    else -> false
+}
+```
+
+
+
+```javascript
+//when can also be used as a replacement for an if-else if chain. If no argument is supplied, the branch conditions are simply boolean expressions, and a branch is executed when its condition is true:
+when {
+    x.isOdd() -> print("x is odd")
+    y.isEven() -> print("y is even")
+    else -> print("x+y is even.")
+}
+```
+
+
+```javascript
+//it is possible to capture when subject in a variable using following syntax:
+fun Request.getBody() =
+        when (val response = executeRequest()) {
+            is Success -> response.body
+            is HttpError -> throw HttpException(response.status)
+        }
+        ```
+
