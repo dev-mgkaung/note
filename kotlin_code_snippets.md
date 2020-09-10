@@ -1,5 +1,41 @@
+## Basic Type
 
+```javascript
 
+Every number type supports the following conversions:
+
+toByte(): Byte
+toShort(): Short
+toInt(): Int
+toLong(): Long
+toFloat(): Float
+toDouble(): Double
+toChar(): Char
+
+Built-in operations on booleans include
+
+|| – lazy disjunction
+&& – lazy conjunction
+! - negation
+
+Primitive type arrays
+
+Kotlin also has specialized classes to represent arrays of primitive types without boxing overhead: ByteArray, ShortArray, IntArray and so on.
+
+val x: IntArray = intArrayOf(1, 2, 3)
+x[0] = x[1] + x[2]
+// Array of int of size 5 with values [0, 0, 0, 0, 0]
+val arr = IntArray(5)
+
+// e.g. initialise the values in the array with a constant
+// Array of int of size 5 with values [42, 42, 42, 42, 42]
+val arr = IntArray(5) { 42 }
+
+// e.g. initialise the values in the array using a lambda
+// Array of int of size 5 with values [0, 1, 2, 3, 4] (values initialised to their index value)
+var arr = IntArray(5) { it * 1 }
+```
+-----
 
 # Control Flow: if, when, for, while
 
