@@ -101,6 +101,22 @@ public class MyTest {
 
 ----
 
+## Visibility Modifiers
+
+```python
+Classes, objects, interfaces, constructors, functions, properties and their setters can have visibility modifiers. (Getters always have the same visibility as the property.) There are four visibility modifiers in Kotlin: private, protected, internal and public. The default visibility, used if there is no explicit modifier, is public.
+
+For members declared inside a class:
+
+1. private _  means visible inside this class only (including all its members);
+2. protected — same as private + visible in subclasses too;
+3. internal — any client inside this module who sees the declaring class sees its internal members;
+4. public — any client who sees the declaring class sees its public members.
+```
+
+---
+ 
+
 # Control Flow: if, when, for, while
 
 ## When Expression
