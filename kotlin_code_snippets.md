@@ -6,6 +6,21 @@
 ## When Expression
 
 ```javascript
+val result = when( checkvalue)
+{
+0 -> println("0")
+1,2 -> println("1,2")
+in 3..5 -> println("3,4,5")
+!in 6..8 -> println(" not contain 6,7,8 ")
+parseInt(num) -> println(" num is int ")
+in isValidateNum() -> println("validate")
+is String -> checkvalue.startsWith("prefix")
+else -> println("other wise default value")
+}
+
+```
+
+```javascript
 // The when expression replaces the switch statement in C-like languages. In the simplest form it looks like this
 when (x) {
     1 -> print("x == 1")
@@ -72,7 +87,7 @@ fun Request.getBody() =
         }
 ```
        
-       
+      
 ---
 ## For loop
 
@@ -85,4 +100,5 @@ for ( (index, value) in arrays.withIndex()) println( "element at $index is $vlau
 ```
 
 ---
+
 
