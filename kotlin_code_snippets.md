@@ -842,12 +842,12 @@ The Kotlin standard library provides factory methods for several useful kinds of
 ### Lazy
 lazy() is a function that takes a lambda and returns an instance of Lazy<T> which can serve as a delegate for implementing a lazy property: the first call to get() executes the lambda passed to lazy() and remembers the result, subsequent calls to get() simply return the remembered result.
     
-    ```python
+ ```python
     
     val lazyValue: String by lazy {
     println("computed!")
     "Hello"
-}
+    }
 
 fun main() {
     println(lazyValue)
@@ -855,4 +855,89 @@ fun main() {
 }
 
 ```
+---
+
+## Functions
+Function declarations
+Functions in Kotlin are declared using the fun keyword:
+
+```python
+fun double(x: Int): Int {
+    return 2 * x
+}
+fun powerOf(number: Int, exponent: Int) { /*...*/ }
+
+Default arguments
+fun read(b: Array<Byte>, off: Int = 0, len: Int = b.size) { /*...*/ }
+
+```
+Named arguments
+```python
+fun reformat(
+    str: String,
+    normalizeCase: Boolean = true,
+    upperCaseFirstLetter: Boolean = true,
+    divideByCamelHumps: Boolean = false,
+    wordSeparator: Char = ' ') {
+/*...*/
+}
+
+
+When calling this function, you don’t have to name all its arguments:
+
+reformat(
+    'String!',
+    false,
+    upperCaseFirstLetter = false,
+    divideByCamelHumps = true,
+    '_'
+)
+
+You can skip all arguments with default values:
+
+reformat('This is a long String!')
+
+You can skip some arguments with default values. However, after the first skipped argument, you must name all subsequent arguments:
+
+reformat('This is a short String!', upperCaseFirstLetter = false, wordSeparator = '_')
+```
+
+
+Unit-returning functions
+If a function does not return any useful value, its return type is Unit. Unit is a type with only one value - Unit. This value does not have to be returned explicitly:
+
+```python
+fun printHello(name: String?): Unit {
+    if (name != null)
+        println("Hello $name")
+    else
+        println("Hi there!")
+    // `return Unit` or `return` is optional
+}
+
+The Unit return type declaration is also optional. The above code is equivalent to:
+
+fun printHello(name: String?) { ... }
+fun printHello(name: String?) { ... }
+
+````
+Single-expression functions
+
+```python
+When a function returns a single expression, the curly braces can be omitted and the body is specified after a = symbol:
+
+fun double(x: Int): Int = x * 2
+Explicitly declaring the return type is optional when this can be inferred by the compiler:
+
+fun double(x: Int) = x * 2
+
+```
+
+Generic functions
+Functions can have generic parameters which are specified using angle brackets before the function name:
+
+```python
+fun <T> singletonList(item: T): List<T> { /*...*/ }
+```
+---
 
