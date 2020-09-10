@@ -300,7 +300,7 @@ class MyView : View {
     constructor(ctx: Context, attrs: AttributeSet) : super(ctx, attrs)
 }
 
-Overriding methods
+* Overriding methods
 open class Shape {
     open fun draw() { /*...*/ }
     fun fill() { /*...*/ }
@@ -311,7 +311,7 @@ class Circle() : Shape() {
 }
 
 
-Overriding properties
+* Overriding properties
 open class Shape {
     open val vertexCount: Int = 0
 }
@@ -367,7 +367,7 @@ interface MyInterface {
     }
 }
 
-Implementing Interfaces
+* Implementing Interfaces
 A class or object can implement one or more interfaces
 
 class Child : MyInterface {
@@ -377,7 +377,7 @@ class Child : MyInterface {
 }
 
 
-Properties in Interfaces
+ * Properties in Interfaces
 ou can declare properties in interfaces. A property declared in an interface can either be abstract, or it can provide implementations for accessors. Properties declared in interfaces can't have backing fields, and therefore accessors declared in interfaces can't reference them.
 
 interface MyInterface {
@@ -395,7 +395,7 @@ class Child : MyInterface {
     override val prop: Int = 29
 }
 
-Interfaces Inheritance
+ * Interfaces Inheritance
 An interface can derive from other interfaces and thus both provide implementations for their members and declare new functions and properties. Quite naturally, classes implementing such an interface are only required to define the missing implementations:
 
 interface Named {
@@ -418,7 +418,7 @@ data class Employee(
 
 
 
-Resolving overriding conflicts
+ * Resolving overriding conflicts
 When we declare many types in our supertype list, it may appear that we inherit more than one implementation of the same method. For example
 
 interface A {
