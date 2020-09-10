@@ -204,29 +204,32 @@ for ( (index, value) in arrays.withIndex()) println( "element at $index is $vlau
 ## Classes and Inheritance
 
 ```javascript
-Classes
+
 Classes in Kotlin are declared using the keyword class:
 class Invoice { /*...*/ }
 
 Class members
 Classes can contain:
 
-Constructors and initializer blocks
-Functions
-Properties
-Nested and Inner Classes
-Object Declarations
+1. Constructors and initializer blocks
+2. Functions
+3. Properties
+4. Nested and Inner Classes
+5. Object Declarations
+
+------
 
 Constructors
 A class in Kotlin can have a primary constructor and one or more secondary constructors. The primary constructor is part of the class header: it goes after the class name (and optional type parameters).
 
 class Person constructor(firstName: String) { /*...*/ }
 
-If the primary constructor does not have any annotations or visibility modifiers, the constructor keyword can be omitted:
+
+* If the primary constructor does not have any annotations or visibility modifiers, the constructor keyword can be omitted:
 
 class Person(firstName: String) { /*...*/ }
 
-The primary constructor cannot contain any code. Initialization code can be placed in initializer blocks, which are prefixed with the init keyword.
+ * The primary constructor cannot contain any code. Initialization code can be placed in initializer blocks, which are prefixed with the init keyword.
 
 class InitOrderDemo(name: String) {
     val firstProperty = "First property: $name".also(::println)
@@ -242,10 +245,12 @@ class InitOrderDemo(name: String) {
     }
 }
 
+----
 
 class Person(val firstName: String, val lastName: String, var age: Int) { /*...*/ }
 
-Secondary constructors
+
+* Secondary constructors
 The class can also declare secondary constructors, which are prefixed with constructor
 
 class Person {
