@@ -821,3 +821,38 @@ fun main() {
 }
 ```
 ---
+
+## Delegated Properties
+There are certain common kinds of properties, that, though we can implement them manually every time we need them, would be very nice to implement once and for all, and put into a library. Examples include:
+
+lazy properties: the value gets computed only upon first access;
+observable properties: listeners get notified about changes to this property;
+storing properties in a map, instead of a separate field for each property.
+To cover these (and other) cases, Kotlin supports delegated properties:
+
+```python
+class Example {
+    var p: String by Delegate()
+}
+```
+
+Standard delegates
+The Kotlin standard library provides factory methods for several useful kinds of delegates.
+
+### Lazy
+lazy() is a function that takes a lambda and returns an instance of Lazy<T> which can serve as a delegate for implementing a lazy property: the first call to get() executes the lambda passed to lazy() and remembers the result, subsequent calls to get() simply return the remembered result.
+    
+    ```python
+    
+    val lazyValue: String by lazy {
+    println("computed!")
+    "Hello"
+}
+
+fun main() {
+    println(lazyValue)
+    println(lazyValue)
+}
+
+```
+
