@@ -964,3 +964,71 @@ a constructor: ::Regex
 ```
 
 ---
+
+## Kotlin Collections Overview
+
+1. List is an ordered collection with access to elements by indices – integer numbers that reflect their position. Elements can occur more than once in a list. An example of a list is a sentence: it's a group of words, their order is important, and they can repeat.
+
+2. Set is a collection of unique elements. It reflects the mathematical abstraction of set: a group of objects without repetitions. Generally, the order of set elements has no significance. For example, an alphabet is a set of letters.
+
+3. Map (or dictionary) is a set of key-value pairs. Keys are unique, and each of them maps to exactly one value. The values can be duplicates. Maps are useful for storing logical connections between objects, for example, an employee's ID and their position.
+
+# List
+
+```python
+val numbers = listOf("one", "two", "three", "four")
+println("Number of elements: ${numbers.size}")
+println("Third element: ${numbers.get(2)}")
+println("Fourth element: ${numbers[3]}")
+
+
+MutableList
+
+val numbers = mutableListOf(1, 2, 3, 4)
+numbers.add(5)
+numbers.removeAt(1)
+numbers[0] = 0
+numbers.shuffle()
+println(numbers)
+```
+
+# Set
+
+```python
+val numbers = setOf(1, 2, 3, 4)
+println("Number of elements: ${numbers.size}")
+if (numbers.contains(1)) println("1 is in the set")
+
+val numbersBackwards = setOf(4, 3, 2, 1)
+println("The sets are equal: ${numbers == numbersBackwards}")
+
+MutableSet
+val numbers = setOf(1, 2, 3, 4)  // LinkedHashSet is the default implementation
+val numbersBackwards = setOf(4, 3, 2, 1)
+
+println(numbers.first() == numbersBackwards.first())
+println(numbers.first() == numbersBackwards.last())
+```
+
+# Map
+
+```python
+
+val numbersMap = mapOf("key1" to 1, "key2" to 2, "key3" to 3, "key4" to 1)
+
+println("All keys: ${numbersMap.keys}")
+println("All values: ${numbersMap.values}")
+if ("key2" in numbersMap) println("Value by key \"key2\": ${numbersMap["key2"]}")    
+if (1 in numbersMap.values) println("The value 1 is in the map")
+if (numbersMap.containsValue(1)) println("The value 1 is in the map") // same as previous
+
+
+MutableMap
+
+val numbersMap = mutableMapOf("one" to 1, "two" to 2)
+numbersMap.put("three", 3)
+numbersMap["one"] = 11
+
+println(numbersMap)
+```
+---
