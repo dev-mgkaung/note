@@ -903,7 +903,7 @@ reformat('This is a short String!', upperCaseFirstLetter = false, wordSeparator 
 ```
 
 
-Unit-returning functions
+## Unit-returning functions
 If a function does not return any useful value, its return type is Unit. Unit is a type with only one value - Unit. This value does not have to be returned explicitly:
 
 ```python
