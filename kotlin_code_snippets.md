@@ -941,3 +941,26 @@ fun <T> singletonList(item: T): List<T> { /*...*/ }
 ```
 ---
 
+## Lambda expression syntax
+The full syntactic form of lambda expressions is as follows:
+
+```python
+val sum: (Int, Int) -> Int = { x: Int, y: Int -> x + y }
+
+
+
+Instantiating a function type
+There are several ways to obtain an instance of a function type:
+
+Using a code block within a function literal, in one of the forms:
+a lambda expression: { a, b -> a + b },
+an anonymous function: fun(s: String): Int { return s.toIntOrNull() ?: 0 }
+Function literals with receiver can be used as values of function types with receiver.
+
+Using a callable reference to an existing declaration:
+a top-level, local, member, or extension function: ::isOdd, String::toInt,
+a top-level, member, or extension property: List<Int>::size,
+a constructor: ::Regex
+```
+
+---
