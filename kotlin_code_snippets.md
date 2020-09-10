@@ -1,4 +1,6 @@
 
+
+
 # Control Flow: if, when, for, while
 
 ## When Expression
@@ -68,5 +70,19 @@ fun Request.getBody() =
             is Success -> response.body
             is HttpError -> throw HttpException(response.status)
         }
-        ```
+```
+       
+       
+---
+## For loop
+
+```javascript
+for (item in Collections) println(item)
+for ( index in 1..3) println(i)
+for ( index in 10 downTo 0 step 2) println(index)
+for ( index in arrays.indices) println ( array[index])
+for ( (index, value) in arrays.withIndex()) println( "element at $index is $vlaue")
+```
+
+---
 
