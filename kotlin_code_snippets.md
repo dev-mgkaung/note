@@ -555,3 +555,55 @@ data class Sum(val e1: Expr, val e2: Expr) : Expr()
 object NotANumber : Expr()
 
 ```
+---
+
+# Nested and Inner Classes
+
+```python
+Classes can be nested in other classes:
+
+class Outer {
+    private val bar: Int = 1
+    class Nested {
+        fun foo() = 2
+    }
+}
+​
+val demo = Outer.Nested().foo() // == 2
+
+```
+---
+
+## Inner classes
+A nested class marked as inner can access the members of its outer class. Inner classes carry a reference to an object of an outer class:
+
+```python
+class Outer {
+    private val bar: Int = 1
+    inner class Inner {
+        fun foo() = bar
+    }
+}
+
+val demo = Outer().Inner().foo() // == 1
+```
+
+----
+
+## Anonymous inner classes
+
+```python
+Anonymous inner class instances are created using an object expression:
+
+window.addMouseListener(object : MouseAdapter() {
+​
+    override fun mouseClicked(e: MouseEvent) { ... }
+​
+    override fun mouseEntered(e: MouseEvent) { ... }
+})
+
+
+val listener = ActionListener { println("clicked") }
+```
+---
+
