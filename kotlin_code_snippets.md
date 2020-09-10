@@ -768,7 +768,8 @@ fun main() {
     val b = BaseImpl(10)
     Derived(b).print()
 }
-Target platform: JVMRunning on kotlin v. 1.4.0
+
+
 The by-clause in the supertype list for Derived indicates that b will be stored internally in objects of Derived and the compiler will generate all the methods of Base that forward to b.
 
 Overriding a member of an interface implemented by delegation
@@ -792,8 +793,9 @@ fun main() {
     val b = BaseImpl(10)
     Derived(b).printMessage()
     Derived(b).printMessageLine()
-}
-Target platform: JVMRunning on kotlin v. 1.4.0
+
+
+
 Note, however, that members overridden in this way do not get called from the members of the delegate object, which can only access its own implementations of the interface members:
 
 interface Base {
