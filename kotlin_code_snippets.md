@@ -145,4 +145,65 @@ for ( (index, value) in arrays.withIndex()) println( "element at $index is $vlau
 
 ---
 
+## Classes and Inheritance
 
+```javascript
+Classes
+Classes in Kotlin are declared using the keyword class:
+class Invoice { /*...*/ }
+
+Constructors
+A class in Kotlin can have a primary constructor and one or more secondary constructors. The primary constructor is part of the class header: it goes after the class name (and optional type parameters).
+
+class Person constructor(firstName: String) { /*...*/ }
+
+If the primary constructor does not have any annotations or visibility modifiers, the constructor keyword can be omitted:
+
+class Person(firstName: String) { /*...*/ }
+
+The primary constructor cannot contain any code. Initialization code can be placed in initializer blocks, which are prefixed with the init keyword.
+
+class InitOrderDemo(name: String) {
+    val firstProperty = "First property: $name".also(::println)
+    
+    init {
+        println("First initializer block that prints ${name}")
+    }
+    
+    val secondProperty = "Second property: ${name.length}".also(::println)
+    
+    init {
+        println("Second initializer block that prints ${name.length}")
+    }
+}
+
+
+class Person(val firstName: String, val lastName: String, var age: Int) { /*...*/ }
+
+Secondary constructors
+The class can also declare secondary constructors, which are prefixed with constructor
+
+class Person {
+    var children: MutableList<Person> = mutableListOf<>()
+    constructor(parent: Person) {
+        parent.children.add(this)
+    }
+}
+
+class Person(val name: String) {
+    var children: MutableList<Person> = mutableListOf<>()
+    constructor(name: String, parent: Person) : this(name) {
+        parent.children.add(this)
+    }
+}
+
+class Constructors {
+    init {
+        println("Init block")
+    }
+
+    constructor(i: Int) {
+        println("Constructor")
+    }
+}
+```
