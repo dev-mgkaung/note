@@ -973,6 +973,24 @@ a constructor: ::Regex
 
 3. Map (or dictionary) is a set of key-value pairs. Keys are unique, and each of them maps to exactly one value. The values can be duplicates. Maps are useful for storing logical connections between objects, for example, an employee's ID and their position.
 
+
+# Empty collections
+
+There are also functions for creating collections without any elements: emptyList(), emptySet(), and emptyMap(). When creating empty collections, you should specify the type of elements that the collection will hold.
+
+```python
+val empty = emptyList<String>()
+
+```
+# Initializer functions for lists
+
+For lists, there is a constructor that takes the list size and the initializer function that defines the element value based on its index.
+```python
+val doubled = List(3, { it * 2 })  // or MutableList if you want to change its content later
+println(doubled)
+```
+
+
 # List
 
 ```python
