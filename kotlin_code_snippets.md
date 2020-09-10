@@ -523,3 +523,9 @@ fun main() {
 ```
 
 ----
+
+## Data Classes
+We frequently create classes whose main purpose is to hold data. In such a class some standard functionality and utility functions are often mechanically derivable from the data. In Kotlin, this is called a data class and is marked as data:
+
+data class User(val name: String, val age: Int)
+
