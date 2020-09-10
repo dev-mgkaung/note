@@ -1167,3 +1167,29 @@ val numbers = listOf("one", "two", "three", "four")
 println(numbers.joinToString { "Element: ${it.toUpperCase()}"})
 ```
 ---
+
+# Collection with Plus Minus Operators 
+
+```python
+val numbers = listOf( "one" ,"two")
+val pluslist= numbers + "three"
+val minus_list =numers - "three"
+```
+---
+
+# Grouping
+
+```python
+//groupBy 
+val num= listOf("one","two","three","four","five")
+println(num.groupBy(it.first().toUpperCase()})
+
+//groupBy with keySelector
+println(num.groupBy(keySelector = { it.first()}, valueTransform ={it.toUpperCase() }))
+
+//groupBy with each count
+val numbers = listOf("one", "two", "three", "four", "five", "six")
+println(numbers.groupingBy { it.first() }.eachCount())
+
+```
+---
