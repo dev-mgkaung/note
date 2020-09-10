@@ -607,3 +607,123 @@ val listener = ActionListener { println("clicked") }
 ```
 ---
 
+
+## Enum Classes
+
+```python
+The most basic usage of enum classes is implementing type-safe enums:
+
+enum class Direction {
+    NORTH, SOUTH, WEST, EAST
+}
+Each enum constant is an object. Enum constants are separated with commas.
+
+* Initialization
+Since each enum is an instance of the enum class, they can be initialized as:
+
+enum class Color(val rgb: Int) {
+        RED(0xFF0000),
+        GREEN(0x00FF00),
+        BLUE(0x0000FF)
+}
+enum class Color(val rgb: Int) {
+        RED(0xFF0000),
+        GREEN(0x00FF00),
+        BLUE(0x0000FF)
+}
+
+```
+----
+
+
+## Object Expressions and Declarations
+Sometimes we need to create an object of a slight modification of some class, without explicitly declaring a new subclass for it. Kotlin handles this case with object expressions and object declarations.
+
+```python
+Object declarations
+Singleton may be useful in several cases, and Kotlin (after Scala) makes it easy to declare singletons:
+
+object DataProviderManager {
+    fun registerDataProvider(provider: DataProvider) {
+        // ...
+    }
+
+    val allDataProviders: Collection<DataProvider>
+        get() = // ...
+}
+```
+---
+
+## Companion Objects
+An object declaration inside a class can be marked with the companion keyword:
+```python
+
+class MyClass {
+    companion object Factory {
+        fun create(): MyClass = MyClass()
+    }
+}
+
+Members of the companion object can be called by using simply the class name as the qualifier:
+
+val instance = MyClass.create()
+The name of the companion object can be omitted, in which case the name Companion will be used:
+
+class MyClass {
+    companion object { }
+}
+​
+val x = MyClass.Companion
+
+
+* The name of a class used by itself (not as a qualifier to another name) acts as a reference to the companion object of the class (whether named or not):
+
+class MyClass1 {
+    companion object Named { }
+}
+
+val x = MyClass1
+
+class MyClass2 {
+    companion object { }
+}
+
+val y = MyClass2
+class MyClass1 {
+    companion object Named { }
+}
+​
+val x = MyClass1
+​
+class MyClass2 {
+    companion object { }
+}
+​
+val y = MyClass2
+
+* Note that, even though the members of companion objects look like static members in other languages, at runtime those are still instance members of real objects, and can, for example, implement interfaces:
+
+interface Factory<T> {
+    fun create(): T
+}
+
+class MyClass {
+    companion object : Factory<MyClass> {
+        override fun create(): MyClass = MyClass()
+    }
+}
+
+val f: Factory<MyClass> = MyClass
+interface Factory<T> {
+    fun create(): T
+}
+​
+class MyClass {
+    companion object : Factory<MyClass> {
+        override fun create(): MyClass = MyClass()
+    }
+}
+​
+val f: Factory<MyClass> = MyClass
+```
+---
