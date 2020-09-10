@@ -42,8 +42,28 @@ loop@ for (i in 1..100) {
         if (...) break@loop
     }
 }
+
 ```
+
+
 -----
+
+## Properties and Fields
+
+```python
+Declaring Properties
+Properties in Kotlin classes can be declared either as mutable using the var keyword, or as read-only using the val keyword.
+
+class Address {
+    var name: String = "Holmes, Sherlock"
+    var street: String = "Baker"
+    var city: String = "London"
+    var state: String? = null
+    var zip: String = "123456"
+}
+
+```
+---
 
 # Control Flow: if, when, for, while
 
