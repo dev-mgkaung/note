@@ -463,3 +463,63 @@ class D : A, B {
 }
 ```
 ----
+
+
+## Extensions
+
+Kotlin provides the ability to extend a class with new functionality without having to inherit from the class or use design patterns such as Decorator. This is done via special declarations called extensions. 
+
+```python
+Extension functions
+To declare an extension function, we need to prefix its name with a receiver type, i.e. the type being extended. The following adds a swap function to MutableList<Int>:
+
+fun MutableList<Int>.swap(index1: Int, index2: Int) {
+    val tmp = this[index1] // 'this' corresponds to the list
+    this[index1] = this[index2]
+    this[index2] = tmp
+}
+fun MutableList<Int>.swap(index1: Int, index2: Int) {
+    val tmp = this[index1] // 'this' corresponds to the list
+    this[index1] = this[index2]
+    this[index2] = tmp
+}
+
+===
+
+val list = mutableListOf(1, 2, 3)
+list.swap(0, 2) // 'this' inside 'swap()' will hold the value of 'list'
+
+
+* Companion object extensions
+If a class has a companion object defined, you can also define extension functions and properties for the companion object. Just like regular members of the companion object, they can be called using only the class name as the qualifier:
+
+class MyClass {
+    companion object { }  // will be called "Companion"
+}
+​
+fun MyClass.Companion.printCompanion() { println("companion") }
+​
+fun main() {
+    MyClass.printCompanion()
+}
+
+* Scope of extensions
+Most of the time we define extensions on the top level - directly under packages:
+
+package org.example.declarations
+ 
+fun List<String>.getLongestString() { /*...*/}
+To use such an extension outside its declaring package, we need to import it at the call site:
+
+package org.example.usage
+​
+import org.example.declarations.getLongestString
+​
+fun main() {
+    val list = listOf("red", "green", "blue")
+    list.getLongestString()
+}
+
+```
+
+----
