@@ -664,6 +664,8 @@ class MyClass {
     }
 }
 
+
+
 Members of the companion object can be called by using simply the class name as the qualifier:
 
 val instance = MyClass.create()
@@ -674,6 +676,8 @@ class MyClass {
 }
 ​
 val x = MyClass.Companion
+
+
 
 
 * The name of a class used by itself (not as a qualifier to another name) acts as a reference to the companion object of the class (whether named or not):
@@ -701,7 +705,11 @@ class MyClass2 {
 ​
 val y = MyClass2
 
-* Note that, even though the members of companion objects look like static members in other languages, at runtime those are still instance members of real objects, and can, for example, implement interfaces:
+
+
+
+* Note that, even though the members of companion objects look like static members in other languages, at runtime those are still instance members of real objects, and can, for 
+example, implement interfaces:
 
 interface Factory<T> {
     fun create(): T
@@ -725,5 +733,13 @@ class MyClass {
 }
 ​
 val f: Factory<MyClass> = MyClass
+
+
+Semantic difference between object expressions and declarations
+There is one important semantic difference between object expressions and object declarations:
+
+1. object expressions are executed (and initialized) immediately, where they are used;
+2. object declarations are initialized lazily, when accessed for the first time;
+3. a companion object is initialized when the corresponding class is loaded (resolved), matching the semantics of a Java static initializer.
 ```
 ---
