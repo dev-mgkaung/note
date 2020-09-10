@@ -527,5 +527,21 @@ fun main() {
 ## Data Classes
 We frequently create classes whose main purpose is to hold data. In such a class some standard functionality and utility functions are often mechanically derivable from the data. In Kotlin, this is called a data class and is marked as data:
 
+```python
 data class User(val name: String, val age: Int)
+data class User(val name: String = "", val age: Int = 0)
+
+* Properties Declared in the Class Body
+Note that the compiler only uses the properties defined inside the primary constructor for the automatically generated functions. To exclude a property from the generated implementations, declare it inside the class body:
+
+data class Person(val name: String) {
+    var age: Int = 0
+}
+
+val person1 = Person("John")
+val person2 = Person("John")
+person1.age = 10
+person2.age = 20
+```
+---
 
