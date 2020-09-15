@@ -75,6 +75,7 @@
 
 ## Android Best Practice 
 1. Coil (https://coil-kt.github.io/coil/getting_started/)
+2. Hilt (https://dagger.dev/hilt/)
 
 ----
 
