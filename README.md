@@ -54,6 +54,7 @@
 3. The Movie DB (https://developers.themoviedb.org/3)
 4. Open Api (https://open-api.xyz/api/)
 5. Tiingo (https://api.tiingo.com/documentation/general/overview)
+6. Rick Mocky (https://rickandmortyapi.com/documentation)
 ----
 
 ## Json
