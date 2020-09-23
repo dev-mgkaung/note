@@ -24,6 +24,10 @@
 7. Flutter icon Pack (https://www.fluttericon.com/)
 ---
 
+## Animation
+1. Lottiefiles (https://lottiefiles.com/search?q=confetti)
+-----
+
 ## Short Url 
 1. https://bit.ly/
 2. https://www.shorturl.at/shortener.php
