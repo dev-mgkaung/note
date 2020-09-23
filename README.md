@@ -26,6 +26,7 @@
 
 ## Animation
 1. Lottiefiles (https://lottiefiles.com/search?q=confetti)
+android lib (https://github.com/airbnb/lottie-android)
 -----
 
 ## Short Url 
