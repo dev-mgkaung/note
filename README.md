@@ -108,5 +108,14 @@ android lib (https://github.com/airbnb/lottie-android)
 1. Codecademy (https://www.codecademy.com/catalog/subject/mobile-development)
 2. Free Code Camp (https://www.freecodecamp.org/learn)
 3. Code Wars (https://www.codewars.com/?language=kotlin)
+---
+
+## Remote destop
+1. AnyDesk
+2. TeamViewer
+----
+
+## Application Software testing tool
+1. Burp Suite (https://portswigger.net/burp)
 
 
