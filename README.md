@@ -96,6 +96,7 @@ android lib (https://github.com/airbnb/lottie-android)
 2. Hilt (https://dagger.dev/hilt/)
 3. Material Components(https://material.io/develop/android/)
 4. Medium (https://medium.com/androiddevelopers/tagged/kotlin)
+5. Continous Integration and Continous Delivery (https://docs.github.com/en/free-pro-team@latest/actions/learn-github-actions/introduction-to-github-actions)
 ----
 
 ## Cloud Message Website
