@@ -169,19 +169,21 @@ flutter run --flavor prod
 
 ## product flavor for Android
  ```python
- flavorDimensions "app"
-productFlavors {
-  development {
-  applicationIdSuffix '.dev'
-  flavorDimensions "app"
-                     }
-  production{
-  applicationIdSuffix '.prod'
-  flavorDimensions "app"
-                     }
-  qa{
-  applicationIdSuffix '.qa'
-  flavorDimensions "app"
-                     }
+   productFlavors{
+        flavorDimensions "app"
+        productFlavors {
+            development {
+                applicationIdSuffix '.dev'
+                flavorDimensions "app"
+            }
+            production{
+                applicationIdSuffix '.prod'
+                flavorDimensions "app"
+            }
+            qa{
+                applicationIdSuffix '.qa'
+                flavorDimensions "app"
+            }
+    }
 }
  ```
