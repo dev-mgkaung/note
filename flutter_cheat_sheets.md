@@ -2,7 +2,15 @@
 ```python
 flutter help
 ```
+## flutter clean
+## flutter doctor
 
+## DevTools 
+Precompile error solve this command
+```python
+flutter pub cache repair
+
+```
 
 ## Flutter Command Option Guide
 ``` python
