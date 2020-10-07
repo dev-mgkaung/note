@@ -30,7 +30,9 @@ Available commands:
   test                     Run Flutter unit tests for the current project.
   upgrade                  Upgrade your copy of Flutter.
   version                  List or switch flutter versions.
+  
 ````
+
 
 ## Obfucating Dart Code
 
