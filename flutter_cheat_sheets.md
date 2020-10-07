@@ -1,7 +1,9 @@
 ## Obfucating Dart Code
 
 Flutter’s code obfuscation, when supported, works only on a release build.
-
+Remove unused resources
+Minimize resource imported from libraries
+Compress PNG and JPEG files
 
 ```python
 
