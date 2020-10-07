@@ -194,3 +194,13 @@ flutter run –profile –flavor prod -t lib/main.dart
         }
     }
  ```
+ 
+ ## App name base flavor
+ ```python
+ app
+| - src
+   | - debug (default)
+   | - main (default)
+   | - profile (default)
+   | - qa (add this with desired subdirectories)
+ ```
