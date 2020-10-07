@@ -158,35 +158,39 @@ flutter build windows --analyze-size
 
 Debug  Mode :
 ```python
-flutter run –flavor production-t lib/main.dart
-flutter run –flavor development-t lib/main_dev.dart
+flutter run –flavor prod-t lib/main.dart
+flutter run –flavor dev-t lib/main_dev.dart
 flutter run –flavor qa-t lib/main_qa.dart
 ```
 Release Mode :
 ```python
-flutter run –release –flavor production -t lib/main.dart
-flutter run –release –flavor development -t lib/main_dev.dart
+flutter run –release –flavor prod -t lib/main.dart
+flutter run –release –flavor dev -t lib/main_dev.dart
 ```
 Profile Mode :
 ```python
-flutter run –profile –flavor production -t lib/main.dart
+flutter run –profile –flavor prod -t lib/main.dart
 ```
 
 ## product flavor for Android
  ```python
   productFlavors {
-        flavorDimensions "app"
-        development {
+        flavorDimensions "flavor-type"
+        dev {
             applicationIdSuffix '.dev'
-            flavorDimensions "app"
+            dimension  "flavor-type"
+            versionNameSuffix "-dev"
+            manifestPlaceholders = [appName: "Flavor DEV"]
         }
-        production {
-            applicationIdSuffix '.prod'
-            flavorDimensions "app"
+        prod  {
+            dimension  "flavor-type"
+            manifestPlaceholders = [appName: "Flavor"]
         }
         qa {
             applicationIdSuffix '.qa'
-            flavorDimensions "app"
+            dimension  "flavor-type"
+            versionNameSuffix "-qa"
+            manifestPlaceholders = [appName: "Flavor QA"]
         }
     }
  ```
