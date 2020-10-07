@@ -204,3 +204,15 @@ flutter run –profile –flavor prod -t lib/main.dart
    | - profile (default)
    | - qa (add this with desired subdirectories)
  ```
+
+## How to build or run Flutter project
+Typically you would run following commands to build flavored app:
+
+Ordinary apk:
+## flutter build apk --release -t lib/main_tst.dart --build-name=1.0.0 --build-number=1 --flavor tst
+
+App bundle:
+## flutter build appbundle --target-platform android-arm,android-arm64 --release -t lib/main_tst.dart --build-name=1.0.0 --build-number=1 --flavor tst
+
+iOS:
+## flutter build ios --release --no-codesign -t lib/main_tst.dart --build-name=1.0.0 --build-number=1 --flavor tst
