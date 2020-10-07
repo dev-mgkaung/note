@@ -159,7 +159,7 @@ flutter build windows --analyze-size
 Debug  Mode :
 ```python
 flutter run –flavor production-t lib/main.dart
-flutter run –flavor development-t lib/main)dev.dart
+flutter run –flavor development-t lib/main_dev.dart
 flutter run –flavor qa-t lib/main_qa.dart
 ```
 Release Mode :
