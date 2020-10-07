@@ -11,3 +11,10 @@ sample code
 flutter build apk --obfuscate --split-debug-info=/apprelease_testing_demo/build/app/outputs/symbols
 
 ````
+
+
+## Check Flutter Version
+ 
+ ```python
+ flutter --version 
+```
