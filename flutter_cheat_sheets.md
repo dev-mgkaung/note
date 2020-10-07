@@ -156,15 +156,20 @@ flutter build windows --analyze-size
 
 ## Flavours
 
-Debug  running
+Debug  Mode :
 ```python
-flutter run -t lib/main_dev.dart
-flutter run -t lib/main_test.dart
+flutter run –flavor production-t lib/main.dart
+flutter run –flavor development-t lib/main)dev.dart
+flutter run –flavor qa-t lib/main_qa.dart
 ```
-release ruuning
+Release Mode :
 ```python
-flutter run --flavor dev 
-flutter run --flavor prod
+flutter run –release –flavor production -t lib/main.dart
+flutter run –release –flavor development -t lib/main_dev.dart
+```
+Profile Mode :
+```python
+flutter run –profile –flavor production -t lib/main.dart
 ```
 
 ## product flavor for Android
