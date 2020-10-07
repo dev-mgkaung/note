@@ -18,3 +18,16 @@ flutter build apk --obfuscate --split-debug-info=/apprelease_testing_demo/build/
  ```python
  flutter --version 
 ```
+
+## Bundle Release
+
+```python
+flutter build appbundle
+```
+
+## Apk IOS Release
+
+```python
+flutter build apk
+flutter build ios
+```
