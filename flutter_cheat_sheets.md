@@ -1,3 +1,9 @@
+## Flutter Command Option Guide
+``` python
+flutter -h
+
+````
+
 ## Obfucating Dart Code
 
 Flutter’s code obfuscation, when supported, works only on a release build.
