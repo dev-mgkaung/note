@@ -153,3 +153,16 @@ flutter build linux --analyze-size
 flutter build macos --analyze-size
 flutter build windows --analyze-size
 ```
+
+## Flavours
+
+Debug  running
+```python
+flutter run -t lib/main_dev.dart
+flutter run -t lib/main_test.dart
+```
+release ruuning
+```python
+flutter run --flavor dev 
+flutter run --flavor prod
+```
