@@ -1,7 +1,21 @@
+## Flutter device id
+```
+flutter --device-id 
+```
+
 ## Flutter Help
 ```python
-flutter help
+flutter h
 ```
+## Flutter Channel
+```
+flutter channel
+```
+## Flutter update
+```
+flutter update
+```
+
 ## flutter clean
 ## flutter doctor
 
