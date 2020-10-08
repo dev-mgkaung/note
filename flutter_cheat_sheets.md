@@ -251,6 +251,11 @@ All test ->
  flutter test test/models/favorites_test.dart 
 
 ```
+### Widget Test
+```
+Enter Shift + R. This hot restarts the app and re-runs all the tests.
+The complete test file: test/home_test.dart.
+```
 Flutter Test Commands
 Flutter test driver
 ```
