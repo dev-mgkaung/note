@@ -256,6 +256,8 @@ All test ->
 Enter Shift + R. This hot restarts the app and re-runs all the tests.
 The complete test file: test/home_test.dart.
 ```
+
+### Integration Test
 Flutter Test Commands
 Flutter test driver
 ```
