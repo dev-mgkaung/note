@@ -154,17 +154,17 @@ flutter build macos --analyze-size
 flutter build windows --analyze-size
 ```
 
-## Flavours
+## Flavors
 
 Debug  Mode :
 ```python
-flutter run –flavor prod-t lib/main.dart
-flutter run –flavor dev-t lib/main_dev.dart
-flutter run –flavor qa-t lib/main_qa.dart
+flutter run –flavor prod -t lib/main_prod.dart
+flutter run –flavor dev -t lib/main_dev.dart
+flutter run –flavor qa -t lib/main_qa.dart
 ```
 Release Mode :
 ```python
-flutter run –release –flavor prod -t lib/main.dart
+flutter run –release –flavor prod -t lib/main_prod.dart
 flutter run –release –flavor dev -t lib/main_dev.dart
 ```
 Profile Mode :
