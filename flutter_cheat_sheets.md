@@ -221,6 +221,9 @@ iOS:
 
 ## Testing
 
+1. A unit test tests a single function, method, or class.
+2. A widget test (in other UI frameworks referred to as component test) tests a single widget.
+3. An integration test tests a complete app or a large part of an app.
 ### Unit test
 The test() method takes two positional parameters: the description of the test and the callback where you actually write the test.
 ##### test ( description , callback )
