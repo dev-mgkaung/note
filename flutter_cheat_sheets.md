@@ -251,3 +251,8 @@ All test ->
  flutter test test/models/favorites_test.dart 
 
 ```
+Flutter Test Commands
+Flutter test driver
+```
+flutter drive --target=test_driver/app.dart
+```
