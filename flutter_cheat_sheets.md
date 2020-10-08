@@ -220,11 +220,16 @@ iOS:
 
 
 ## Testing
-####  flutter test test/models/favorites_test.dart 
+
 ### Unit test
 The test() method takes two positional parameters: the description of the test and the callback where you actually write the test.
-
+##### test ( description , callback )
+Tip: You can run all the tests in the test directory at once by running:
 ~~~python
-test ( description , callback )
+
+All test ->
+ flutter test
+ Single Test file ->
+ flutter test test/models/favorites_test.dart 
 
 ````
