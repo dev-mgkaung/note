@@ -223,3 +223,8 @@ iOS:
 
 ### Unit test
 The test() method takes two positional parameters: the description of the test and the callback where you actually write the test.
+
+~~~python
+test ( description , callback )
+
+````
