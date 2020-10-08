@@ -216,3 +216,10 @@ App bundle:
 
 iOS:
 #### flutter build ios --release --no-codesign -t lib/main_tst.dart --build-name=1.0.0 --build-number=1 --flavor tst
+
+
+
+## Testing
+
+### Unit test
+The test() method takes two positional parameters: the description of the test and the callback where you actually write the test.
