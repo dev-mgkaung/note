@@ -78,6 +78,7 @@ android lib (https://github.com/airbnb/lottie-android)
 7. Flutter Blogs (https://www.didierboelens.com/)
 8. Make beautiful app with flutter (https://fidev.io/)
 9. Flutter Cheat Sheet (https://howtodothisinflutter.com/)
+10. Flutter Shape Maker (https://flutter-shapemaker.web.app/#/)
 ------
 
 ## Android Learning Websites
