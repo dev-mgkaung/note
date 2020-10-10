@@ -98,6 +98,8 @@ android lib (https://github.com/airbnb/lottie-android)
 3. Material Components(https://material.io/develop/android/)
 4. Medium (https://medium.com/androiddevelopers/tagged/kotlin)
 5. Continous Integration and Continous Delivery (https://docs.github.com/en/free-pro-team@latest/actions/learn-github-actions/introduction-to-github-actions)
+6. In app Review (https://developer.android.com/guide/playcore/in-app-review/kotlin-java)
+7. In app Update (https://developer.android.com/guide/playcore/in-app-updates)
 ----
 
 ## Cloud Message Website
