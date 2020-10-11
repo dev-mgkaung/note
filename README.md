@@ -62,6 +62,7 @@ android lib (https://github.com/airbnb/lottie-android)
 5. Tiingo (https://api.tiingo.com/documentation/general/overview)
 6. Rick Mocky (https://rickandmortyapi.com/documentation)
 7. Unsplash (https://unsplash.com/documentation)
+8. HTTP Status Code (https://www.restapitutorial.com/httpstatuscodes.html)
 ----
 
 ## Json
