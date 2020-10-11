@@ -63,7 +63,7 @@ android lib (https://github.com/airbnb/lottie-android)
 6. Rick Mocky (https://rickandmortyapi.com/documentation)
 7. Unsplash (https://unsplash.com/documentation)
 8. HTTP Status Code (https://www.restapitutorial.com/httpstatuscodes.html)
-9. Facke Api Testing (https://www.instantwebtools.net/)
+9. Facke Api Testing (https://www.instantwebtools.net/fake-rest-api)
 ----
 
 ## Json
