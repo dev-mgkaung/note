@@ -2,7 +2,7 @@
 ## Status code knowledge
 
 # 1xx Informational
-```
+```python
 100 Continue
 101 Switching Protocols
 102 Processing (WebDAV)
@@ -10,7 +10,7 @@
 
 
 # 2xx Success
-```
+```python
  200 OK
  201 Created
  202 Accepted
