@@ -1,17 +1,17 @@
 ```python
 
- Android   11	               30	         R	             
- Android   10	               29         	Q            	
- Android   9	                28         	P	
- Android   8.1	              27	         O_MR1
- Android   8.0	              26	         O	
+ Android   11	                 30	         R	             
+ Android   10	                 29         	Q            	
+ Android   9	                  28         	P	
+ Android   8.1	                27	         O_MR1
+ Android   8.0	                26	         O	
  Android   7.1.1
- Android   7.1	              25         	N_MR1
- Android   7.0	              24         	N	
- Android   6.0	              23         	M	
- Android   5.1	              22         	LOLLIPOP_MR1	
- Android   5.0	              21         	LOLLIPOP
- Android   4.4W	             20          KITKAT_WATCH	KitKat for Wearables Only
+ Android   7.1	                25         	N_MR1
+ Android   7.0	                24         	N	
+ Android   6.0	                23         	M	
+ Android   5.1	                22         	LOLLIPOP_MR1	
+ Android   5.0	                21         	LOLLIPOP
+ Android   4.4W	               20          KITKAT_WATCH	KitKat for Wearables Only
  Android   4.4	              19	         KITKAT	
  Android   4.3	              18	         JELLY_BEAN_MR2	
  Android   4.2, 4.2.2  	     17	         JELLY_BEAN_MR1
