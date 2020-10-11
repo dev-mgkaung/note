@@ -1,10 +1,30 @@
 
 ## Status code knowledge
 
-- STATUS CODES
-- 200 success
-- 400 something wrong on your end (client side errors), e.g., missing required parameters
-- 401 wrong api key or your account is suspended
-- 404 endpoint not exist, or podcast / episode not exist
-- 429 you are using FREE plan and you exceed the quota limit
-- 500 something wrong on our end (unexpected server errors)
+# 1xx Informational
+```
+100 Continue
+101 Switching Protocols
+102 Processing (WebDAV)
+```
+
+
+# 2xx Success
+````
+ 200 OK
+ 201 Created
+ 202 Accepted
+ 203 Non-Authoritative Information
+ 204 No Content
+ 205 Reset Content
+ 206 Partial Content
+ 207 Multi-Status (WebDAV)
+ 208 Already Reported (WebDAV)
+ 226 IM Used
+```
+
+
+
+
+ 
+
