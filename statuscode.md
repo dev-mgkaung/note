@@ -1,6 +1,6 @@
 ## RestApi Methods
 ```python
-Post    (Create)
+POST    (Create)
 GET     (Read)
 PUT     (Update, Replace)
 PATCH   (Update/Modify)
