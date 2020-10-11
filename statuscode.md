@@ -1,5 +1,15 @@
+## RestApi Methods
+```python
+Post    (Create)
+GET     (Read)
+PUT     (Update, Replace)
+PATCH   (Update/Modify)
+DELETE  (Delete)
+```
 
-## Status code knowledge
+
+
+## RestApi  Status code knowledge
 
 # 1xx Informational
 ```python
