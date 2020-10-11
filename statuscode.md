@@ -25,7 +25,7 @@
 
 
 # 3xx Redirection
-```
+```python
 300 Multiple Choices
 301 Moved Permanently
 302 Found
@@ -38,7 +38,7 @@
 ```
 
 # 4xx Client Error
-```
+```python
  400 Bad Request
  401 Unauthorized
  402 Payment Required
@@ -75,7 +75,7 @@
 ```
 
 # 5xx Server Error
-```
+```python
 500 Internal Server Error
 501 Not Implemented
 502 Bad Gateway
