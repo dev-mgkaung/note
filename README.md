@@ -82,6 +82,7 @@ android lib (https://github.com/airbnb/lottie-android)
 8. Make beautiful app with flutter (https://fidev.io/)
 9. Flutter Cheat Sheet (https://howtodothisinflutter.com/)
 10. Flutter Shape Maker (https://flutter-shapemaker.web.app/#/)
+11. Json to Dart (https://javiercbk.github.io/json_to_dart/)
 ------
 
 ## Android Learning Websites
