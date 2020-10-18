@@ -9,6 +9,7 @@
 
 # PlayConsole
 1. internal App Sharing (https://play.google.com/console/internal-app-sharing)
+2. In App update (https://www.raywenderlich.com/8034025-in-app-updates-getting-started)
 ---
 
 ##  **Design** 
