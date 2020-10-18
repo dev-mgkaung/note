@@ -5,8 +5,12 @@
 
 # Pravicy
 1. Pravicy Generator (https://app-privacy-policy-generator.firebaseapp.com/)
-
 ---
+
+# PlayConsole
+1. internal App Sharing (https://play.google.com/console/internal-app-sharing)
+---
+
 ##  **Design** 
 1. Material Palette (https://www.materialpalette.com/icons)
 2. Adobe XD course(https://www.xdguru.com/adobe-xd-course/)
