@@ -151,4 +151,7 @@ android lib (https://github.com/airbnb/lottie-android)
 
 ## Room Database
 1. DB browser (https://sqlitebrowser.org/)
+---
 
+## Tesor Flow
+1. Teachable Machine (https://teachablemachine.withgoogle.com/)
