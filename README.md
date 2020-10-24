@@ -92,6 +92,7 @@ android lib (https://github.com/airbnb/lottie-android)
 
 ## Android Learning Websites
 1. raywenderlich ( https://www.raywenderlich.com/ )
+2. Sms vertification api (https://developers.google.com/identity/sms-retriever/verify)
 ---
 
 
