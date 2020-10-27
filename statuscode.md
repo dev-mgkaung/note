@@ -1,3 +1,15 @@
+# Status Codes
+``` python
+
+Status Code တွေကို အုပ်စု (၅) စုခွဲပြီး မှတ်နိုင်ပါတယ်။
+• 1XX – လက်ခံရရှိကြောင်း အသိပေးခြင်း
+• 2XX – ဆက်သွယ်မှု အောင်မြင်ခြင်း
+• 3XX – တည်နေရာ ပြောင်းလဲခြင်း
+• 4XX – Client ကြောင့်ဖြZစ်သော Error
+• 5XX – Server ကြောင့်ဖြZစ်သော Error
+```
+
+
 ## RestApi Methods
 ```python
 POST    (Create)
