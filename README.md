@@ -158,3 +158,7 @@ android lib (https://github.com/airbnb/lottie-android)
 
 ## Tesor Flow
 1. Teachable Machine (https://teachablemachine.withgoogle.com/)
+---
+
+## Backend Knowledge (Spring Boot)
+1. JavaPoint (https://www.javatpoint.com/restful-web-services-best-practice)
