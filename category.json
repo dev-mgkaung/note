@@ -1,0 +1,36 @@
+{
+  "data" : [
+    {
+      "title" : "Beauty",
+      "image" : "https://www.3starwebsolutions.com/cat/beauty.png"
+    },
+    {
+      "title" : "Beauty",
+      "image" : "https://www.3starwebsolutions.com/cat/beauty.png"
+    },
+    {
+      "title" : "Beverage",
+      "image" : "https://www.3starwebsolutions.com/cat/beverage.png"
+    },
+    {
+      "title" : "Fashion",
+      "image" : "https://www.3starwebsolutions.com/cat/fashion.png"
+    },
+    {
+      "title" : "Food",
+      "image" : "https://www.3starwebsolutions.com/cat/food.png"
+    },
+    {
+      "title" : "Health",
+      "image" : "https://www.3starwebsolutions.com/cat/health.png"
+    },
+    {
+      "title" : "Herb",
+      "image" : "https://www.3starwebsolutions.com/cat/herb.png"
+    },
+    {
+      "title" : "Pet Food",
+      "image" : "https://www.3starwebsolutions.com/cat/pet_food.png"
+    }
+  ]
+}
