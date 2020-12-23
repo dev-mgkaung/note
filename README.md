@@ -31,6 +31,7 @@ https://mgkaung.gitbook.io/getx-state-management-flutter-language/
 7. Flutter icon Pack (https://www.fluttericon.com/)
 8. Vector Image (https://shapeshifter.design/)
 9. Render forest (https://www.renderforest.com/)
+10. Font Awesome (https://fontawesome.com/icons?d=listing)
 ---
 
 ## Animation
