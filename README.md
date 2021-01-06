@@ -133,8 +133,12 @@ android lib (https://github.com/airbnb/lottie-android)
 
 ## Web Scrapping & Crawling
 1. https://www.import.io/
-2. https://parsehub.com/register
+2. https://www.parsehub.com/
 3. https://try.jsoup.org/
+4. https://www.octoparse.com/
+5. https://www.mozenda.com/
+6. https://dexi.io/
+
 ------
 
 ## Android Best Practice 
