@@ -90,6 +90,7 @@ android lib (https://github.com/airbnb/lottie-android)
 7. Adobe After Effect (https://www.adobe.com/products/aftereffects/free-trial-download.html)
 8. ArtBoard (https://artboard.studio/project)
 9. WhiteBoard (https://www.doodly.com/)
+10. previewed (https://previewed.app/mockup/maker)
 ----
 
 ## Api
