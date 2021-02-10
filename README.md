@@ -1,8 +1,14 @@
 # NoteList ( My Programmer Lifetime experience )
-https://mgkaung.gitbook.io/getx-state-management-flutter-language/
+
 1. *Markdown*  (https://www.markdownguide.org/)
 2. MarkDown language Guide (https://guides.github.com/features/mastering-markdown/)
 -------
+
+# Git
+1. GitBook (https://www.gitbook.com/)
+
+## React Native
+1. React Native (https://reactnative.dev/docs/getting-started)
 
 # Pravicy
 1. Pravicy Generator (https://app-privacy-policy-generator.firebaseapp.com/)
