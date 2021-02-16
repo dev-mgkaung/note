@@ -10,6 +10,7 @@
 ## React Native
 1. React Native (https://reactnative.dev/docs/getting-started)
 2. React Native Example (https://reactnavigation.org/docs/getting-started)
+3. Style Components (https://styled-components.com/docs/basics)
 ---
 
 # Pravicy
