@@ -1,4 +1,7 @@
 # NoteList
+# Video Recording Live Streaming Software
+1. OBS (https://obsproject.com/welcome)
+-------
 
 # Data Scirence
 1. Myanmar Data Science (https://myanmardatascience.com/#)
