@@ -1,4 +1,8 @@
 # NoteList
+# Google Location for job
+1. Google My Bussiness (https://www.google.com/business/)
+----
+
 # Video Recording Live Streaming Software
 1. OBS (https://obsproject.com/welcome)
 -------
