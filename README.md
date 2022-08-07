@@ -3,7 +3,6 @@
 # Data Scirence
 1. Myanmar Data Science (https://myanmardatascience.com/#)
 
-1. *Markdown*  (https://www.markdownguide.org/)
 -------
 
 # Pravicy
