@@ -20,6 +20,7 @@
 ## Server
 1. Heroku (https://id.heroku.com/login)
 2. Zeet.co (https://zeet.co/)
+3. FreeResellerHost.com
 ----
 ##  **Design** 
 1. Material Palette (https://www.materialpalette.com/icons)
