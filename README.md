@@ -16,6 +16,11 @@
 1. Pravicy Generator (https://app-privacy-policy-generator.firebaseapp.com/)
 
 ---
+
+## Server
+1. Heroku (https://id.heroku.com/login)
+2. Zeet.co (https://zeet.co/)
+----
 ##  **Design** 
 1. Material Palette (https://www.materialpalette.com/icons)
 2. Adobe XD course(https://www.xdguru.com/adobe-xd-course/)
