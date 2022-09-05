@@ -1,4 +1,15 @@
 # NoteList
+# Free hosting
+* InfinityFree
+* Wix
+* 000WebHost
+* Google Cloud Hosting
+* AwardSpace
+* Freehostia
+* FreeHosting
+* ByetHost
+* HyperPHP
+* FreeWebHostingArea
 
 # Top Backend tools
 1. Back4app (https://www.back4app.com)
