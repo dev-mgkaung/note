@@ -1,5 +1,6 @@
 # NoteList
 # Free hosting
+* GoogieHost
 * InfinityFree
 * Wix
 * 000WebHost
